@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Normalización a todo tipo de paginas-->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Importar fuente de texto desde GoogleFonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,400;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+
+    
+    <title>Store</title>
+</head>
+
+<body>
+    <header class="header">
+        <a ref="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+    
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Tienda</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1> VUEJS </h1>
+        <div class="productoselec">
+            <img class="productoselec__img" src="img/1.jpg" alt="polera VUEJS">
+            <div class="productoselec__poleras">
+                <p class="productoselec__poleras__texto">Maecenas consectetur ultricies mi vel venenatis. Curabitur risus tellus, congue non tellus at, semper dapibus turpis. Duis pellentesque, risus sit amet placerat porttitor, tortor augue volutpat ante, non dignissim odio ligula at arcu.</p>
+                <form>
+                    <select class="productoselec__poleras__talla">
+                        <option disable selected> -- Seleccionar Talla --</option>
+                        <option> m </option>
+                        <option> l </option>
+                        <option> xl </option>
+                        <option> xxl </option>
+                    </select>
+                </form> 
+                <input class="productoselec__poleras__cantidad" type="number" placeholder="Cantidad" min="1">
+                <input class="productoselec__poleras__boton"classtype="submit" value="Agregar al Carrito">
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos reservados 2022, Sebastian Venegas.</p>
+    </footer>
+
+</body>
+</html>
